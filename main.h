@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-/* Flag Modifier Macros */
 #define PLUS 1
 #define SPACE 2
 #define HASH 4
@@ -18,7 +17,6 @@
 #define ZERO_FLAG ((flags >> 3) & 1)
 #define NEG_FLAG ((flags >> 4) & 1)
 
-/* Length Modifier Macros */
 #define SHORT 1
 #define LONG 2
 
@@ -113,4 +111,4 @@ unsigned int convert_sbase(buffer_t *output, long int num, char *base,
 unsigned int convert_ubase(buffer_t *output, unsigned long int num, char *base,
 		unsigned char flags, int wid, int prec);
 
-#endif /* MAIN_H */
+#endif
